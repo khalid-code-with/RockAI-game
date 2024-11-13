@@ -1,0 +1,92 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   
+                url('second_kam_beautyful.jpg'), 
+                url('beautyful_image.jpg');
+    background-size: cover, cover, cover;
+    background-position: center top, center bottom, center;
+    background-repeat: no-repeat;
+    animation: scrollBackground 15s linear infinite;
+    color: white; /* Makes text easier to read */
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position: center top, center bottom, center;
+    }
+    50% {
+        background-position: center bottom, center top, center;
+    }
+    200% {
+        background-position: center top, center bottom, center;
+    }
+}
+
+h1 {
+    background:linear-gradient(rgb(18, 112, 175),rgb(15, 171, 158));
+    color: white;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.choice {
+    margin-top: 2rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    transition: transform 0.2s ease, border-color 0.2s ease; 
+}
+
+.choice:hover {
+    border: 0.2rem solid goldenrod;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #ffff;
+    /* opacity: 0.;  */
+}
+
+#ai-score, #user-score {
+    font-size: 3rem;
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgba(8, 27, 49, 0.8);
+    color: white;
+    font-size: 2rem;
+    display: inline-block; 
+}
